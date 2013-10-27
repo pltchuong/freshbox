@@ -51,8 +51,6 @@ module.exports = function(grunt) {
 
   config.env = process.env;
 
-  
-
 
   // App Kit's Main Tasks
   // ====================
