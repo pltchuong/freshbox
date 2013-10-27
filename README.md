@@ -40,9 +40,3 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
 
 ### Run Client in Development Mode w/LiveReload
     grunt server
-
-
-
-## Special Thanks
-
-Some ideas in ember-app-kit originated in work by Yapp Labs (@yapplabs) with McGraw-Hill Education Labs (@mhelabs) on [yapplabs/glazier](https://github.com/yapplabs/glazier). Thanks to Yapp and MHE for supporting the Ember ecosystem!
