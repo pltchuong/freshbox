@@ -1,8 +1,8 @@
-# Freshbox
+# Freshbox Client
 
-This is the beginning of the Freshbox client codebase.  It is based upon Ember App Kit and uses the same scaffolding.  See the Documentation under _Getting Started_
+This is the beginning of the Freshbox client codebase.  It is based upon Ember App Kit [![Build Status](https://travis-ci.org/stefanpenner/ember-app-kit.png?branch=master)](https://travis-ci.org/stefanpenner/ember-app-kit) and uses the same scaffolding.  See the Documentation under _Understanding Ember App Kit_
 
-## Getting Started
+## Understanding Ember App Kit
 
 * [Getting Started Guide](http://stefanpenner.github.io/ember-app-kit/guides/getting-started.html)
 * *Safari Books Online Blog* - [Introduction to Ember App Kit](http://blog.safaribooksonline.com/2013/09/18/ember-app-kit/) for more experienced Ember developers by @mixonic
