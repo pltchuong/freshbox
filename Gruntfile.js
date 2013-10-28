@@ -1,37 +1,4 @@
 module.exports = function(grunt) {
-  // To support Coffeescript, SASS, LESS and others, just install
-  // the appropriate grunt package and it will be automatically included
-  // in the build process:
-  //
-  // * for Coffeescript, run `npm install --save-dev grunt-contrib-coffee`
-  //
-  // * for SASS (SCSS only), run `npm install --save-dev grunt-sass`
-  // * for SCSS/SASS support (may be slower), run
-  //   `npm install --save-dev grunt-contrib-sass`
-  //   This depends on the ruby sass gem, which can be installed with
-  //   `gem install sass`
-  //
-  // * for LESS, run `npm install --save-dev grunt-contrib-less`
-  //
-  // * for Stylus/Nib, `npm install --save-dev grunt-contrib-stylus`
-  //
-  // * for Compass, run `npm install --save-dev grunt-contrib-compass`
-  //   This depends on the ruby compass gem, which can be installed with
-  //   `gem install compass`
-  //   You should not install SASS if you have installed Compass.
-  //
-  // * for Emblem, run the following commands:
-  //   `npm uninstall --save-dev grunt-ember-templates`
-  //   `npm install --save-dev grunt-emblem`
-  //   `bower install emblem.js --save`
-  //
-  // * for LiveReload, `npm install --save-dev connect-livereload`
-  //
-  // * for displaying the execution time of the various grunt tasks,
-  //   `npm install --save-dev time-grunt`
-  //
-  // If you use SASS, LESS or Stylus, don't forget to delete
-  // `public/assets/app.css` and create `app/styles/app.scss` instead.
 
   var Helpers = require('./tasks/helpers'),
       filterAvailable = Helpers.filterAvailableTasks,
