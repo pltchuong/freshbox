@@ -18,10 +18,6 @@ module.exports = function(grunt) {
 
   config.env = process.env;
 
-
-  // App Kit's Main Tasks
-  // ====================
-
   // Default Task
   // ------------------
   grunt.registerTask('default', "Build (in debug mode) & test your application.", ['test']);
