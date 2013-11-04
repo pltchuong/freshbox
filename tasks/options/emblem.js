@@ -1,7 +1,7 @@
 module.exports = {
   compile: {
     files: {
-      "tmp/public/assets/templates.js": ['app/templates/**/*.{emblem,hbs,hjs,handlebars}']
+      "tmp/public/assets/templates.js": ['app/templates/**/*.emblem']
     },
     options: {
       root: 'app/templates/',
