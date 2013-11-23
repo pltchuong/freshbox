@@ -6,13 +6,12 @@ Router.map(function() {
     this.route("ordertrack", { path: "track"});
     this.route("myAccount", { path: "account" });
 
-    this.route('component-test');
-    this.route('helper-test');
-    // this.resource('posts', function() {
-    //   this.route('new');
-    // });
-    // 
-    //  
+    this.route('our-boxes');
+    this.resource('store', function() {
+      this.resource('category', {path:'/:category_id'}, function() {
+        this.resource('product', {path:'/:product_id'});
+      });
+    });
 });
 
 export default Router;

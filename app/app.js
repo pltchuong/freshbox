@@ -1,5 +1,4 @@
 import Resolver from 'resolver';
-import registerComponents from 'appkit/utils/register_components';
 
 var App = Ember.Application.extend({
   LOG_ACTIVE_GENERATION: true,
@@ -10,13 +9,5 @@ var App = Ember.Application.extend({
   modulePrefix: 'appkit', // TODO: loaded via config
   Resolver: Resolver
 });
-
-App.initializer({
-  name: 'Register Components',
-  initialize: function(container, application) {
-    registerComponents(container);
-  }
-});
-
 
 export default App;
