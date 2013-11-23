@@ -11,6 +11,7 @@ Router.map(function() {
     // this.resource('posts', function() {
     //   this.route('new');
     // });
+    // 
     //  
 });
 
