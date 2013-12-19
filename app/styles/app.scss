@@ -104,3 +104,17 @@ body {background: $main-bgcolor; letter-spacing: 0.066em;}
 .product-details .product-link {display: inline-block; width: 183px; height: 40px; background: $main-color; color: #fff; text-transform: uppercase; font-size: 14px; text-align: center; line-height: 40px; border-bottom: 1px #18212b solid;}
 .product-details .product-highlight {padding-top: 35px; font-size: 14px;}
 .product-details .product-highlight li {background: url('img/ico-list.png') no-repeat left 5px; list-style: none; margin-left: 11px; padding: 0 0 5px 23px;}
+
+.account {text-align: center; padding: 86px 0 300px;}
+.account .steps {background: url('img/account-bg.png') no-repeat center 18px;}
+.account .steps li {display: inline-block; width: 130px;}
+.account .steps a {color: $main-blue; text-transform: uppercase; font-size: 12px;}
+.account .steps i {display: block; font-style: normal; border: 3px $main-blue solid; width: 40px; height: 40px; -webkit-border-radius: 20px; border-radius: 20px; font-size: 18px; text-align: center; line-height: 34px; margin: auto; background: #fff; margin-bottom: 4px;}
+.account .steps li.step-over i {background: $main-blue; color: #fff; font-weight: bold;}
+.account form {text-align: left; margin: 0;}
+.account form h3 {font-size: 18px; text-transform: uppercase; margin: 30px 0 15px;}
+.account form input {display: inline-block; text-transform: uppercase; padding: 0 15px; height: 37px; border: 1px #aeb1b2 solid; margin-bottom: 24px;}
+.account form input[type="submit"] {border: none;}
+.account form a {display: inline-block; width: 281px; height: 37px; line-height: 37px; text-transform: uppercase; text-align: center; color: #fff !important;}
+.account form a.help {background: #aeb1b2; color: #fff; width: 24px; height: 24px; text-align: center; line-height: 24px; -webkit-border-radius: 12px; border-radius: 12px;}
+.account form label {display: inline; text-transform: uppercase; font-size: 12px;}

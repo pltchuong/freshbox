@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="small-8 large-8 small-centered large-centered columns">
+    <div class="account">
+      <ul class="steps">
+        <li class="step-over"><a href=""><i>&#10003;</i>Create Account</a></li>
+        <li><a href=""><i>2</i>Shipping</a></li>
+        <li><a href=""><i>3</i>Billing</a></li>
+      </ul>
+      
+      <form>
+        <h3>Shipping Information</h3>
+        <input type="text" style="width: 582px" placeholder="Name" />
+        <input type="text" style="width: 582px" placeholder="Address" />
+        <input type="text" style="width: 238px" placeholder="City" /> &nbsp;&nbsp; <input type="text" style="width: 146px" placeholder="State" /> &nbsp;&nbsp; <input type="text" style="width: 164px" placeholder="Zipcode" />
+        <!--<input type="submit" style="width: 281px" {{action 'shipping'}} value="Next" class="blue" />-->
+        {{#link-to 'billing' class='blue'}}Next{{/link-to}}
+      </form>
+    </div>
+  </div>
+</div>

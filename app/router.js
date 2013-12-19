@@ -12,6 +12,9 @@ Router.map(function() {
         this.resource('product', {path:'/:product_id'});
       });
     });
+    this.route('create-account');
+    this.route('shipping');
+    this.route('billing');
 });
 
 export default Router;
