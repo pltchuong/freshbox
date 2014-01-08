@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>FreshBox</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
   <link rel="stylesheet" href="/assets/app.css">
 
   <!-- for more details visit: https://github.com/yeoman/grunt-usemin -->
@@ -14,6 +17,10 @@
   <script src="/vendor/ember-localstorage-adapter/localstorage_adapter.js"></script>
   <script src="/vendor/almond.js"></script>
   <script src="/vendor/resolver.js"></script>
+  
+  <script src="/vendor/foundation/js/vendor/custom.modernizr.js"></script>
+  <script src="/vendor/foundation/js/foundation/foundation.js"></script>
+  <script src="/vendor/foundation/js/foundation/foundation.topbar.js"></script>
   <!-- endbuild -->
 
   <!-- build:js(tmp/public) /assets/app.min.js -->
@@ -24,6 +31,11 @@
 <body>
   <script>
     window.App = require('appkit/app').create();
+  </script>
+  <script>
+    jQuery(document).ready(function($) {
+      $(document).foundation();
+    });
   </script>
 </body>
 </html>

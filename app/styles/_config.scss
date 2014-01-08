@@ -15,6 +15,18 @@ $main-color: #2c3e50;
 $main-bgcolor: #ecf0f1;
 $main-blue: #3498db;
 
+// menu
+$topbar-bg: $main-bgcolor;
+$topbar-dropdown-bg: $main-bgcolor;
+$topbar-link-color: $body-font-color;
+$topbar-link-weight: normal;
+$topbar-height: 66px;
+$topbar-divider-border-bottom: none;
+$topbar-divider-border-top: solid 1px #bdc3c7; 
+$topbar-menu-link-color: $body-font-color;
+$topbar-menu-icon-color: $body-font-color;
+$topbar-link-bg-hover: $main-blue;
+
 @import "../../vendor/foundation/scss/foundation/components/global";
 @import "../../vendor/foundation/scss/foundation/components/grid";
 @import "../../vendor/foundation/scss/foundation/components/visibility";
