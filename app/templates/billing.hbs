@@ -1,13 +1,27 @@
 <div class="border white subnav">
   <div class="row">
     <div class="small-12 large-12 columns">
-      <ul class="small-block-grid-1 large-block-grid-5 menu">
-        <li>{{#link-to 'create-account'}}Account{{/link-to}}</li>
-        <li>{{#link-to 'shipping'}}Shipping{{/link-to}}</li>
-        <li>{{#link-to 'billing'}}Billing{{/link-to}}</li>
-        <li><a href="#">Subscription</a></li>
-        <li><a href="#">Tracking</a></li>
-      </ul>
+      <nav class="top-bar top-subbar white" data-topbar>
+        <ul class="title-area">
+          <li class="name">&nbsp;</li>
+          <li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left ">
+            <li class="divider">&nbsp;</li>
+            <li>{{#link-to 'create-account'}}Account{{/link-to}}</li>
+            <li class="divider">&nbsp;</li>
+            <li>{{#link-to 'shipping'}}Shipping{{/link-to}}</li>
+            <li class="divider">&nbsp;</li>
+            <li>{{#link-to 'billing'}}Billing{{/link-to}}</li>
+            <li class="divider">&nbsp;</li>
+            <li><a href="#">Subscription</a></li>
+            <li class="divider">&nbsp;</li>
+            <li>{{#link-to 'tracking'}}Tracking{{/link-to}}</li>
+            <li class="divider">&nbsp;</li>
+          </ul>
+        </section>
+      </nav>
     </div>
   </div>
 </div>

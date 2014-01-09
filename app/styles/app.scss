@@ -12,6 +12,7 @@
 }
 
 body {background: $main-bgcolor; letter-spacing: 0.066em;}
+button {font-size: 14px; width: 200px; height: 30px; font-weight: normal; padding: 0; border: none; background: $main-blue !important; box-shadow: none; -webkit-box-shadow: none;}
 
 .white {background: #fff;}
 .center {text-align: center;}
@@ -20,9 +21,16 @@ body {background: $main-bgcolor; letter-spacing: 0.066em;}
 .upper {text-transform: uppercase;}
 .blue {background: $main-blue; color: #fff;}
 .relative {position: relative;}
+.textblue {color: $main-blue;}
+.textgrey {color: #aeb1b2;}
+.textgreen {color: #429f1e;}
 
 .top-bar-section li a {text-transform: uppercase;}
 .top-bar-section li a.active {background: $main-blue; color: #fff;}
+
+.top-subbar .top-bar-section ul li > a {background: #fff !important;}
+.top-subbar .top-bar-section ul li > a:hover,
+.top-subbar .top-bar-section ul li > a.active {background: $main-blue !important;}
 
 .menu li {width: auto; padding: 0;}
 .menu li a {font-size: 14px; text-transform: uppercase; display: block; border-right: 1px #bdc3c7 solid; text-align: center; padding: 0 15px; color: $main-color;}
@@ -63,8 +71,6 @@ body {background: $main-bgcolor; letter-spacing: 0.066em;}
 .quotes .border-boxes-inner {padding: 50px 30px;}
 .quotes img.left {margin-right: 20px;}
 
-.subnav ul {line-height: 58px; margin: 0;}
-
 .subcribed-box .box-selection {line-height: 57px; display: block; font-size: 18px;}
 
 .subcribed-details .border-boxes-inner {padding: 30px 52px;}
@@ -97,7 +103,6 @@ body {background: $main-bgcolor; letter-spacing: 0.066em;}
 .your-box td img {max-width: 40px; max-height: 40px;}
 .your-box td span {background: url('img/ico-close2.png') no-repeat; display: block; width: 7px; height: 7px; cursor: pointer;}
 .your-box td div {text-overflow: ellipsis; white-space: nowrap; width: 130px; overflow: hidden;}
-.your-box td button {font-size: 14px; width: 200px; height: 30px; font-weight: normal; padding: 0; border: none; background: $main-blue !important; box-shadow: none; -webkit-box-shadow: none;}
 
 .product-details {background: #fff; position: fixed; top: 100px; left: 50%; width: 1024px; z-index: 20; margin-left: -512px; border: 1px $main-color solid;}
 .product-details .product-close {display: block; width: 17px; height: 17px; position: absolute; top: 18px; right: 15px; background: url('img/ico-close.png') no-repeat;}

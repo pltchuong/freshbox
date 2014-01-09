@@ -15,6 +15,7 @@ Router.map(function() {
     this.route('create-account');
     this.route('shipping');
     this.route('billing');
+    this.route('tracking');
 });
 
 export default Router;
