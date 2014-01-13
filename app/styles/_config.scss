@@ -1,5 +1,5 @@
 @import "../../vendor/foundation/scss/normalize";
-@import "../../vendor/foundation/scss/foundation/variables";
+//@import "../../vendor/foundation/scss/foundation/variables";
 
 // foundation
 $row-width: em-calc(1054);
@@ -22,7 +22,7 @@ $topbar-link-color: $body-font-color;
 $topbar-link-weight: normal;
 $topbar-height: 66px;
 $topbar-divider-border-bottom: none;
-$topbar-divider-border-top: solid 1px #bdc3c7; 
+$topbar-divider-border-top: solid 1px #bdc3c7;
 $topbar-menu-link-color: $body-font-color;
 $topbar-menu-icon-color: $body-font-color;
 $topbar-link-bg-hover: $main-blue;
@@ -38,7 +38,6 @@ $topbar-link-bg-hover: $main-blue;
 @import "../../vendor/foundation/scss/foundation/components/dropdown-buttons";
 @import "../../vendor/foundation/scss/foundation/components/split-buttons";
 @import "../../vendor/foundation/scss/foundation/components/flex-video";
-@import "../../vendor/foundation/scss/foundation/components/section";
 @import "../../vendor/foundation/scss/foundation/components/top-bar";
 @import "../../vendor/foundation/scss/foundation/components/orbit";
 @import "../../vendor/foundation/scss/foundation/components/reveal";
@@ -46,7 +45,6 @@ $topbar-link-bg-hover: $main-blue;
 @import "../../vendor/foundation/scss/foundation/components/clearing";
 @import "../../vendor/foundation/scss/foundation/components/alert-boxes";
 @import "../../vendor/foundation/scss/foundation/components/breadcrumbs";
-@import "../../vendor/foundation/scss/foundation/components/custom-forms";
 @import "../../vendor/foundation/scss/foundation/components/keystrokes";
 @import "../../vendor/foundation/scss/foundation/components/labels";
 @import "../../vendor/foundation/scss/foundation/components/inline-lists";
