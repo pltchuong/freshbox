@@ -1,0 +1,27 @@
+<div class="product-details">
+  <div class="row collapse">
+    <div class="small-12 large-6 columns">
+      <img {{bind-attr src=picture}} />
+    </div>
+    <div class="small-12 large-6 columns">
+      <a href="#" class="product-close" {{action 'close'}}></a>
+      <h5 class="product-title upper">{{title}}</h5>
+      <div class="product-description">
+        {{description}} 
+        <br/><br/><br/>
+        <a href="#" class="product-link">Sizing Chart</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="#" class="product-link" {{action 'addcart' this}}>Add To Box</a>
+        <ul class="product-highlight">
+          <li>95% Organic Cotton / 5% Polyester 95% Organic Cotton / 5% Polyester 95% Organic Cotton / 5% Polyester</li>
+          <li>High Quality, fits true to size.</li>
+          <li>Machine Wahsable</li>
+          <li>10% of sales go to PACT causes</li>
+          <li>95% Organic Cotton / 5% Polyester</li>
+          <li>High Quality, fits true to size.</li>
+          <li>Machine Wahsable</li>
+        </ul>
+        share buttons...
+      </div>
+    </div>
+  </div>
+</div>

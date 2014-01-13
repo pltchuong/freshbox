@@ -1,0 +1,47 @@
+<div class="border white subnav">
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <nav class="top-bar top-subbar white" data-topbar>
+        <ul class="title-area">
+          <li class="name">&nbsp;</li>
+          <li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left ">
+            <li class="divider">&nbsp;</li>
+            <li>{{#link-to 'create-account'}}Account{{/link-to}}</li>
+            <li class="divider">&nbsp;</li>
+            <li>{{#link-to 'shipping'}}Shipping{{/link-to}}</li>
+            <li class="divider">&nbsp;</li>
+            <li>{{#link-to 'billing'}}Billing{{/link-to}}</li>
+            <li class="divider">&nbsp;</li>
+            <li><a href="#">Subscription</a></li>
+            <li class="divider">&nbsp;</li>
+            <li>{{#link-to 'tracking'}}Tracking{{/link-to}}</li>
+            <li class="divider">&nbsp;</li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-8 large-8 small-centered large-centered columns">
+    <div class="account">
+      <ul class="steps">
+        <li><a href=""><i>1</i>Create Account</a></li>
+        <li><a href=""><i>2</i>Shipping</a></li>
+        <li><a href=""><i>3</i>Billing</a></li>
+      </ul>
+      
+      <form>
+        <h3>Create Account</h3>
+        <input type="text" style="width: 297px" placeholder="Username" /> &nbsp;&nbsp;&nbsp;&nbsp; <input type="email" style="width: 297px" placeholder="Email" />
+        <input type="password" style="width: 297px" placeholder="Password" /> &nbsp;&nbsp;&nbsp;&nbsp; <input type="password" style="width: 297px" placeholder="Retype Password" />
+        <!--<input type="submit" style="width: 281px" {{action 'shipping'}} value="Next" class="blue" />-->
+        {{#link-to 'shipping' class='blue'}}Next{{/link-to}}
+      </form>
+    </div>
+  </div>
+</div>

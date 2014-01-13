@@ -1,0 +1,59 @@
+<div class="border white category">
+  <div class="row" {{bind-attr style="bg"}}>
+    <div class="large-3 push-1 columns">
+      <div class="sidebar category-menu border">
+        <form>
+          <input type="text" placeholder="SEARCH" />
+        </form>
+        <ul class="upper">
+          {{#each category in model}}
+            <li>{{#link-to "category" category}}{{category.name}}{{/link-to}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="large-5 push-1 columns">
+      {{outlet}}
+    </div>
+    <div class="large-3 columns">
+      <div>
+        <div class="sidebar your-box">
+          <h3 class="blue upper">Your Box</h3>
+          <table width="100%">
+            {{#each product in products}}
+              <tr>
+                <td width="20%"><img {{bind-attr src="product.picture"}}/></td>
+                <td width="55%"><div>{{#link-to "product" product}}{{product.orderQty}} - {{product.title}}{{/link-to}}</a></div></td>
+                <td width="15%" align="right">${{product.price}}</td>
+                <td width="10%"><span {{action 'cancel' product}}></span></td>
+              </tr>
+            {{/each}}
+            <tr class="noborder">
+              <td colspan="2"><br/>&nbsp; &nbsp; Cart Total</td>
+              <td align="right"><br/>${{carttotal}}</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr class="noborder">
+              <td colspan="2">&nbsp; &nbsp; Subtotal</td>
+              <td align="right">${{subtotal}}</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="2">&nbsp; &nbsp; Shipping<br/><br/></td>
+              <td align="right">$5<br/><br/></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="2"><br/>&nbsp; &nbsp; TOTAL<br/><br/></td>
+              <td align="right"><br/>${{total}}<br/><br/></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="center"><br/><button {{action 'box'}} class="upper">Box it</button><br/></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

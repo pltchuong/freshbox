@@ -1,0 +1,18 @@
+<h1 class="category-title upper">{{name}}</h1>
+{{outlet}}
+{{#each product in products}}
+  <div class="product">
+    <div class="row">
+      <div class="large-4 columns">
+        <img {{bind-attr src=product.picture}} />
+        <a href="#" class="product-add center upper" {{action 'addcart' product}} >Add</a>
+      </div>
+      <div class="large-8 columns">
+        <h2 class="product-title">{{#link-to "product" product}}{{product.title}}{{/link-to}}</h2>
+        <h3 class="product-subtitle">{{product.subtitle}}</h3>
+        <p>{{product.description}}</p>
+        <span class="product-price">${{product.price}}</span>
+      </div>
+    </div>
+  </div>
+{{/each}}
