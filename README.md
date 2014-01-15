@@ -16,7 +16,7 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
 - Module system-aware resolver (see [Referencing views](https://github.com/stefanpenner/ember-app-kit/wiki/Referencing-Views) and [Using Ember loaders](https://github.com/stefanpenner/ember-app-kit/wiki/Using-Ember-loaders))
 - Transparent project compilation & minification for easy deploys via [Grunt](http://gruntjs.com/)
 - Package management via [Bower](https://github.com/bower/bower)
-- Support for CoffeeScript, SASS, and Emblem
+- Support for CoffeeScript and SASS
 - Testing via QUnit, Ember Testing and Karma (with examples)
 - Linting via JSHint (including module syntax)
 - Catch-all `index.html` for easy reloading of pushState router apps
@@ -24,7 +24,7 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
 ## Installation Instructions
 
 ### Clone the Repository
-    git clone git@github.com:ottemo/freshbox.git freshbox-client
+    git clone git@github.com:ottemo/freshbox.git freshbox
 
 ### Install NPM, Grunt and Bower
 
@@ -33,7 +33,7 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
     brew install git-flow
     brew install hub
     alias hub=git  // add this to your .bashrc or .bash_profile
-    npm install -g yo mocha grunt-cli bower
+    npm install -g yo qunit grunt-cli bower
     gem install compass  // you must have ruby 1.9.x or 2.x.x installed
 
 #### Debian based Linux
@@ -48,9 +48,9 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
 
     curl http://hub.github.com/standalone -sLo ~/bin/hub
     chmod +x ~/bin/hub
-    alias git=hub  # add to your .bashrc or .bash_profile or .profile
+    eval '$(hub alias -s)'   # add to your .bashrc or .bash_profile or .profile
 
-    npm install -g yo mocha grunt-cli bower
+    npm install -g yo qunit grunt-cli bower
 
 ### Install local dependancies
     cd <directory of cloned repo>
@@ -69,7 +69,7 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
     git push -u origin <FEATURE-BRANCH>
     git pull-request -b develop
 
-### Build and Run Unit Tests
+### Build and Run Unit Tests and Karma
     grunt
 
 ### Run in Development Mode w/LiveReload
