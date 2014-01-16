@@ -33,7 +33,7 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
     brew install git-flow
     brew install hub
     alias hub=git  // add this to your .bashrc or .bash_profile
-    npm install -g yo qunit grunt-cli bower
+    npm install -g grunt-cli bower
     gem install compass  // you must have ruby 1.9.x or 2.x.x installed
 
 #### Debian based Linux
@@ -50,12 +50,11 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
     chmod +x ~/bin/hub
     eval '$(hub alias -s)'   # add to your .bashrc or .bash_profile or .profile
 
-    npm install -g yo qunit grunt-cli bower
+    npm install -g grunt-cli bower
 
-### Install local dependancies
+### Install local dependancies (bower runs automatically after npm)
     cd <directory of cloned repo>
     npm install
-    bower install
 
 ### Initialize Git-Flow
     git checkout master
