@@ -5,7 +5,7 @@ module.exports = {
     templateBasePath: /app\//,
     templateFileExtensions: /\.(hbs|hjs|handlebars)/,
     templateRegistration: function(name, template) {
-      return grunt.config.process("define('<%= package.namespace %>/") + name + "', ['exports'], function(__exports__){ __exports__['default'] = " + template + "; });";
+      return grunt.config.process("define('<%= package.namespace %>/") + name + "', [], function(){ return " + template + "; });";
     }
   },
   debug: {
@@ -13,7 +13,7 @@ module.exports = {
       precompile: false
     },
     src: "app/templates/**/*.{hbs,hjs,handlebars}",
-    dest: "tmp/result/assets/templates.js"
+    dest: "tmp/public/assets/templates.js"
   },
   dist: {
     src: "<%= emberTemplates.debug.src %>",

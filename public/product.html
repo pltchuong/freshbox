@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freshbox</title>
+    
+    <link rel="stylesheet" href="assets/app.css">
+
+    <!-- build:js(.) /assets/vendor.min.js -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/handlebars/handlebars.js"></script>
+    <script src="vendor/ember/ember.js"></script>
+    <script src="vendor/almond.js"></script>
+    <script src="vendor/resolver.js"></script>
+    <script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js(tmp/public) /assets/app.min.js -->
+    <script src="assets/app.js"></script>
+    <script src="assets/templates.js"></script>
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <div class="container-fluid header">
+      <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="assets/img/logo.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Our Boxes</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Gift</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="container-fluid products" style="background: url('assets/img/placeholder/banner2.jpg') no-repeat center top;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-md-push-4">
+            <h1>Underware</h1>
+            <div class="row">
+              <div class="col-sm-3 col-md-5">
+                <td>
+                  <div class="hidden-xs">
+                    <img class="center-block img-responsive" src="assets/img/placeholder/sub1.jpg" />
+                  </div>
+                </td>
+              </div>
+              <div class="col-sm-12 col-md-10">
+                <h3>Pact <span class="text-primary">$24</span></h3>
+                <div class="visible-xs">
+                  <br/>
+                  <img class="center-block img-responsive" src="assets/img/placeholder/sub1.jpg" />
+                  <br/>
+                </div>
+                <h5>Organic Cotton Boxer-Brief</h5>
+                <small>A logo-branded waistband tops boxer briefs cut from Supima® cotton for superior</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3 col-md-5">
+                <td>
+                  <div class="hidden-xs">
+                    <img class="center-block img-responsive" src="assets/img/placeholder/sub1.jpg" />
+                  </div>
+                </td>
+              </div>
+              <div class="col-sm-12 col-md-10">
+                <h3>Pact <span class="text-primary">$24</span></h3>
+                <div class="visible-xs">
+                  <br/>
+                  <img class="center-block img-responsive" src="assets/img/placeholder/sub1.jpg" />
+                  <br/>
+                </div>
+                <h5>Organic Cotton Boxer-Brief</h5>
+                <small>A logo-branded waistband tops boxer briefs cut from Supima® cotton for superior</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3 col-md-5">
+                <td>
+                  <div class="hidden-xs">
+                    <img class="center-block img-responsive" src="assets/img/placeholder/sub1.jpg" />
+                  </div>
+                </td>
+              </div>
+              <div class="col-sm-12 col-md-10">
+                <h3>Pact <span class="text-primary">$24</span></h3>
+                <div class="visible-xs">
+                  <br/>
+                  <img class="center-block img-responsive" src="assets/img/placeholder/sub1.jpg" />
+                  <br/>
+                </div>
+                <h5>Organic Cotton Boxer-Brief</h5>
+                <small>A logo-branded waistband tops boxer briefs cut from Supima® cotton for superior</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-push-4">
+            <table class="cart table">
+              <thead class="bg-primary">
+                <tr>
+                  <th colspan="4">Your Box</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="assets/img/placeholder/sm1.jpg" /></td>
+                  <td>1 - Pact</td>
+                  <td>$24</td>
+                  <td><a href="#"><img src="assets/img/ico-close2.png" /></a></td>
+                </tr>
+                <tr>
+                  <td><img src="assets/img/placeholder/sm2.jpg" /></td>
+                  <td>2 - Hanes Undershirt</td>
+                  <td>$12</td>
+                  <td><a href="#"><img src="assets/img/ico-close2.png" /></a></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td colspan="2">Cart Total</td>
+                  <td>$36</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Subtotal</td>
+                  <td>$40</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Shipping</td>
+                  <td>$5</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td colspan="2">TOTAL</td>
+                  <td>$45</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td colspan="4">
+                    <button class="btn btn-primary form-control">Box It</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4 col-md-pull-11">
+            <div class="catnav">
+              <form role="search">
+                <div class="input-group">
+                  <input type="text" class="form-control">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><img src="assets/img/ico-search.png" /></button>
+                  </span>
+                </div>
+              </form>
+              <ul>
+                <li>
+                  <a href="#">Underwear</a>
+                  <ul>
+                    <li><a href="#">Boxer-briefs</a></li>
+                    <li><a href="#">Boxers</a></li>
+                    <li><a href="#">Briefs</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Socks</a></li>
+                <li><a href="#">Grooming</a></li>
+                <li><a href="#">Condoms</a></li>
+                <li><a href="#">Other</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <nav class="navbar navbar-default visible-md visible-lg" role="navigation">
+              <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">Our Boxes</a></li>
+                  <li><a href="#">Store</a></li>
+                  <li><a href="#">How It Works</a></li>
+                  <li><a href="#">Gift</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-3 col-md-push-4">
+            <span class="text-center center-block">Follow us &nbsp; <a href="#"><img src="assets/img/ico-fb.png" /></a> &nbsp; <a href="#"><img src="assets/img/ico-tw.png" /></a></span>
+          </div>
+          <div class="col-md-4 col-md-pull-3">
+            <small class="text-center center-block">&copy;2013 FreshBox, All rights reserved.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

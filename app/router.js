@@ -19,4 +19,3 @@ Router.map(function() {
 });
 
 export default Router;
-

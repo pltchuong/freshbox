@@ -22,7 +22,7 @@ module.exports = {
     files: [{
       expand: true,
       cwd: 'tests/',
-      src: '**/*.coffee',
+      src: ['**/*.coffee', '!vendor/**/*.coffee'],
       dest: 'tmp/javascript/tests',
       ext: '.js'
     }]

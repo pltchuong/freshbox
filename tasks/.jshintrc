@@ -35,8 +35,7 @@
     "click",
     "find",
     "isolatedContainer",
-    "startApp",
-    "__dirname"
+    "startApp"
   ],
   "node" : false,
   "browser" : false,

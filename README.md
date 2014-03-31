@@ -5,6 +5,7 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
 ## Understanding Ember App Kit
 
 * [Getting Started Guide](http://stefanpenner.github.io/ember-app-kit/guides/getting-started.html)
+* *Safari Books Online Blog* - [Introduction to Ember App Kit](http://blog.safaribooksonline.com/2013/09/18/ember-app-kit/) for more experienced Ember developers by @mixonic
 * *Ember Sherpa* - [Introduction to Ember App Kit](http://embersherpa.com/articles/introduction-to-ember-app-kit/) for those who are new to the Grunt workflow by @taras
 
 
@@ -15,7 +16,7 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
 - Module system-aware resolver (see [Referencing views](https://github.com/stefanpenner/ember-app-kit/wiki/Referencing-Views) and [Using Ember loaders](https://github.com/stefanpenner/ember-app-kit/wiki/Using-Ember-loaders))
 - Transparent project compilation & minification for easy deploys via [Grunt](http://gruntjs.com/)
 - Package management via [Bower](https://github.com/bower/bower)
-- Support for CoffeeScript and SASS
+- Support for CoffeeScript, SASS, and Emblem
 - Testing via QUnit, Ember Testing and Karma (with examples)
 - Linting via JSHint (including module syntax)
 - Catch-all `index.html` for easy reloading of pushState router apps
@@ -23,53 +24,19 @@ This is the beginning of the Freshbox client codebase.  It is based upon Ember A
 ## Installation Instructions
 
 ### Clone the Repository
-    git clone git@github.com:ottemo/freshbox.git freshbox
+    git clone git@github.com:ottemo/freshbox.git freshbox-client
 
 ### Install NPM, Grunt and Bower
-
-#### OSX
     brew install npm
-    brew install git-flow
-    brew install hub
-    alias hub=git  // add this to your .bashrc or .bash_profile
-    npm install -g grunt-cli bower
-    gem install compass  // you must have ruby 1.9.x or 2.x.x installed
+    npm install -g grunt-cli
+    npm install -g bower
 
-#### Debian based Linux
-    sudo apt-get update
-    sudo apt-get install -y python-software-properties python g++ make
-    sudo add-apt-repository -y ppa:chris-lea/node.js
-    sudo apt-get update
-    sudo apt-get install nodejs
-
-    sudo gem install compass
-    sudo apt-get install git-flow
-
-    curl http://hub.github.com/standalone -sLo ~/bin/hub
-    chmod +x ~/bin/hub
-    eval '$(hub alias -s)'   # add to your .bashrc or .bash_profile or .profile
-
-    npm install -g grunt-cli bower
-
-### Install local dependancies (bower runs automatically after npm)
-    cd <directory of cloned repo>
+### Install dependancies
     npm install
+    bower install
 
-### Initialize Git-Flow
-    git checkout master
-    git checkout develop
-    git flow init -d
+### Build and Run Unit Tests
+    grunt
 
-### Start a Feature Branch
-    git flow feature start <FEATURE-NAME>
-
-### Issue a Pull Request on Github
-    git push -u origin <FEATURE-BRANCH>
-    git pull-request -b develop
-
-### Build and Run Unit Tests and Karma
-    grunt test
-
-### Run in Development Mode w/LiveReload
+### Run Client in Development Mode w/LiveReload
     grunt server
-
